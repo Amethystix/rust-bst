@@ -1,3 +1,9 @@
+mod bst;
+
 fn main() {
-    println!("Hello, world!");
+    let mut bst = bst::BinarySearchTree::new();
+    bst.add(5);
+    bst.add(1);
+    bst.add(10);
+    bst.printInOrder();
 }
